@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>art101</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script type="text/javascript" src="css/overlaypopup.js"></script>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <style>
+    body {
+      font-family: "Arial", sans-serif;
+      margin: 0;
+      padding: 40px 20px;
+      background-color: #fffbe6;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 26px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    .gallery-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #fffbe6;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    .gallery {
+      display: grid;
+      gap: 15px;
+      justify-items: center;
+      padding: 20px;
+    }
+
+    .flat-art {
+      grid-template-columns: repeat(2, 1fr);
+      margin-bottom: 30px;
+    }
+
+    .photo-art {
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    /* 图片的悬浮框效果 */
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    /* 鼠标悬停时图片的效果 */
+    .gallery img:hover {
+      transform: scale(1.05);
+      /* 放大效果 */
+      box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+      /* 阴影效果 */
+    }
+
+    .image-caption {
+      font-size: 14px;
+      color: #333;
+      margin-top: 5px;
+    }
+
+    @media (max-width: 1024px) {
+      .photo-art {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .flat-art {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      .photo-art {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .photo-art {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="container nav_pad">
+      <ul>
+        <li><a class="navbar-link" href="index.html">Main</a></li>
+        <li><a class="navbar-link" href="p1.html">Concept Art</a></li>
+        <li><a class="navbar-link" href="p2.html">Graphic Design</a></li>
+        <li><a class="navbar-link" href="p3.html">Sketchbook</a></li>
+        <li><a class="navbar-link" href="p4.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="gallery-container">
+    <h2>Paintings</h2>
+    <div class="gallery flat-art">
+      <div class="flip-container" onclick="this.classList.toggle('flipped')">
+        <div class="flipper">
+          <div class="front">
+            <img src="images/Q-1.jpg" alt="Painting 1">
+          </div>
+          <div class="back">
+            <div class="image-caption">The Moving Forest - Breaking free from the outside world.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-container" onclick="this.classList.toggle('flipped')">
+        <div class="flipper">
+          <div class="front">
+            <img src="images/Q-2.jpg" alt="Painting 2">
+          </div>
+          <div class="back">
+            <div class="image-caption">Trapped Souls - Inner Struggle.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h2>Photography</h2>
+  <div class="gallery photo-art">
+    <div>
+      <img src="images/W-1.jpg" alt="Photo 1">
+      <div class="image-caption">Fall</div>
+    </div>
+    <div>
+      <img src="images/W-2.jpg" alt="Photo 2">
+      <div class="image-caption">The Surface of a Lake</div>
+    </div>
+    <div>
+      <img src="images/W-3.jpg" alt="Photo 3">
+      <div class="image-caption">Two Worlds</div>
+    </div>
+    <div>
+      <img src="images/W-4.jpg" alt="Photo 4">
+      <div class="image-caption">Leave</div>
+    </div>
+    <div>
+      <img src="images/W-5.jpg" alt="Photo 5">
+      <div class="image-caption">Exploratory</div>
+    </div>
+    <div>
+      <img src="images/W-6.jpg" alt="Photo 6">
+      <div class="image-caption">Two perspectives</div>
+    </div>
+    <div>
+      <img src="images/W-7.jpg" alt="Photo 7">
+      <div class="image-caption">Setting Sun</div>
+    </div>
+    <div>
+      <img src="images/W-8.jpg" alt="Photo 8">
+      <div class="image-caption">Blue</div>
+    </div>
+    <div>
+      <img src="images/W-9.jpg" alt="Photo 9">
+      <div class="image-caption">Quietness</div>
+    </div>
+    <div>
+      <img src="images/W-10.jpg" alt="Photo 10">
+      <div class="image-caption">Wish</div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

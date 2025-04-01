@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <!-- 基本信息 -->
+  <meta charset="utf-8">
+  <title>art101</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- 字体和样式 -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+  <style>
+    /* 全局样式 */
+    body {
+      font-family: 'Raleway', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #faf3e0;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* 导航栏样式 */
+    .navbar {
+      width: 100%;
+      background-color: #faf3e0;
+      padding: 15px 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+
+    .navbar .container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .navbar li {
+      display: inline;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #333;
+      font-size: 18px;
+      font-weight: bold;
+      transition: color 0.3s ease-in-out;
+    }
+
+    .navbar a:hover {
+      color: #fff;
+    }
+
+    /* 标题样式 */
+    .title {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: bold;
+      margin-top: 100px;
+      margin-bottom: 10px;
+    }
+
+    /* 介绍文字 - 左右布局 */
+    .bio-container {
+      display: flex;
+      justify-content: space-between;
+      max-width: 900px;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .bio {
+      width: 50%;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    /* 图片容器 */
+    .gallery {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 5px;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* 底部信息 - 左右分布 */
+    .footer {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      font-size: 16px;
+      background-color: #faf3e0;
+      max-width: 900px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <div class="container">
+      <ul>
+        <li><a href="index.html">Main</a></li>
+        <li><a href="p1.html">Concept Art</a></li>
+        <li><a href="p2.html">Graphic Design</a></li>
+        <li><a href="p3.html">Sketchbook</a></li>
+        <li><a href="p4.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 主要内容 -->
+  <div class="title">Artist Statement</div>
+
+  <div class="bio-container">
+    <div class="bio">
+      My initial visit to an exhibition with a buddy ignited my interest in art. The exhibition's subject focused on
+      human
+      visual bias, and the artists created stunning and surprising pieces using this cognitive trick. I became intrigued
+      because of the wonder that art gave to me at that time. These variously themed pieces are like windows displaying
+      the artist's intended ideas. Even in the most basic tasks, artists seem to have a tender heart.
+    </div>
+    <div class="bio">
+      The language of art is composed of innumerable little volumes, of which graphic design and 3D modeling are only a
+      small portion. People get a sense of excitement and abstraction when they view false three-dimensional graphics on
+      a screen, as though a new universe had materialized before their eyes, in contrast to the real reality. Making
+      graphics is also, in my opinion, a visually engaging hobby. Images, bold inventiveness, text settings, software,
+      typefaces, color coordination, and matching all have an effect and are reflected in one another.
+    </div>
+  </div>
+
+  <div class="gallery">
+    <img src="images/T-1.png" alt="作品1">
+    <img src="images/T-2.png" alt="作品2">
+  </div>
+
+  <!-- 底部信息 -->
+  <div class="footer">
+    <span>Jingyi Wang</span>
+    <span>jingyi.wang01@sjsu.edu</span>
+  </div>
+
+</body>
+
+</html>
